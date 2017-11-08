@@ -27,12 +27,18 @@ function prn(val) {
 }
 
 function checkZero(a) {
-    if(a === 0) confirm('Error, a is not equal to 0');
+    if(a === 0) {
+        confirm('Error, a is not equal to 0');
+        exit();
+    }
+}
+
+function exit() { 
+    break; 
 }
 
 const result = 'Solution of the equation : '+ solveQuadr(a, b, c);
 prn(result);
-
 
 
 
